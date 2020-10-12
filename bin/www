@@ -87,4 +87,8 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  if (process.env.LOAD_SONGS === undefined) {
+    console.log('Server is running. Visit http://localhost:8080 to see the client.');
+    console.log('ctrl + c to close the server');
+  }
 }

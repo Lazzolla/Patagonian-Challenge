@@ -11,7 +11,6 @@ const handleSubmit = async (event) => {
         const name = document.getElementById('artistName').value
         const response = await fetch(`http://localhost:8080/songs?artistName=${name}&page=${currentPage}`)
         const data = await response.json()
-        console.log(data);
         artistName = name
         pagesTotal = data.pagesTotal
         currentPage++

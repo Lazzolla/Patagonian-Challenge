@@ -21,13 +21,11 @@ const saveSongsInDB = async () => {
                     if (err) {
                         return console.log(err);
                     }
-                    if (response) {
-                        return console.log(`Saved all the songs of ${songs.artistName}, id: ${artistId}`);
-                    }
+                    console.log(`Saved all the songs of ${songs.artistName}, id: ${artistId}`);
                 })
 
     }))
-    console.log('Job complete! all the songs was saved.')
+    console.log('Job complete! all the songs were saved.')
     console.log('You can import them using the command <npm run importJSON> to save them in a JSON file, this file would be saved in the folder /public/imports')
     process.exit()
 }

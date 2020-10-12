@@ -7,7 +7,6 @@ const handleSubmitId = async (event) => {
     const songId = document.getElementById('idSong').value
     if (songId.length > 0) {
         const response = await fetch(`http://localhost:8080/songs/${songId}`)
-        console.log(response.status);
         const data = await response.json()
         if (response.status === 200) {
             // If multiple artists are authors
