@@ -19,7 +19,7 @@ const importSongsFromDB = async () => {
                     console.log('Your file is ready! You will find it in the folder: /imports/')
                 })
             } else {
-                console.log('First you need to save songs in the Database. Then run npm run importJSON again to import.');
+                console.log('First you need to save songs in the Database. Then run < npm run importJSON > again to import.');
             }
         })
     process.exit()
