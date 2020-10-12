@@ -1,0 +1,22 @@
+{
+  "name": "patagonian-challenge",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "dev": "node ./bin/www",
+    "saveSongs": "cross-env LOAD_SONGS=load npm run dev",
+    "importJSON": "cross-env LOAD_SONGS=json npm run dev"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.2",
+    "csv-stringify": "^5.5.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "jsonexport": "^3.0.1",
+    "mongoose": "^5.10.9",
+    "morgan": "~1.9.1"
+  }
+}

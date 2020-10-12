@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Challenge Tecnico API API documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="https://github.com/raml2html/raml2html 7.6.0" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="stylesheet" href="./stylesheets/badgeStyles.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#sidebar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9" role="main">
+        <div class="page-header">
+          <h1>Challenge Tecnico API API documentation</h1>
+          <p></p>
+          <p>Challenge para candidatos a Backend Developers - PatagonianTech</p>
+        </div>
+        <!-- <div class="card" style="width: 100rem;">
+          <div class="card-body"> -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item active" role="presentation">
+                <a class="nav-link active" id="artist-tab" data-toggle="tab" href="#artist" role="tab"
+                  aria-controls="artist" aria-selected="true">By Artist</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="id-tab" data-toggle="tab" href="#id" role="tab" aria-controls="id"
+                  aria-selected="false">By Id</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="artist" role="tabpanel" aria-labelledby="artist-tab">
+                <h2 class="card-title">Your artist's songs</h2>
+                <form id="submitArtistName">
+                  <div class="form-group">
+                    <label for="artistName">Type your artist name to search for his songs</label>
+                    <input type="text" class="form-control" id="artistName" placeholder="Artist Name" required minlength="3">
+                  </div>
+                  <table id="tableArtistContainer" class="table">
+                    <thead id="tableArtistHead" class="thead-dark"></thead>
+                    <tbody id="tableArtistBody"></tbody>
+                  </table>
+                  <button type="submit" class="btn btn-primary" style="width: 82rem;">Search for songs</button>
+                </form>
+              </div>
+              <div class="tab-pane" id="id" role="tabpanel" aria-labelledby="id-tab">
+                <h2 class="card-title">Look up for a song</h2>
+                <form id="submitId">
+                  <div class="form-group">
+                    <label for="idTitle">Search songs for his Id</label>
+                    <input type="text" class="form-control" id="idSong" placeholder="Song Id" required>
+                  </div>
+                  <table id="tableIdSong" class="table">
+                    <thead id="tableIdHead" class="thead-dark"></thead>
+                    <tbody id="tableIdBody"></tbody>
+                  </table>
+                  <button type="submit" class="btn btn-primary" style="width: 82rem;">Search a song</button>
+                </form>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./javascripts/artistForm.js"></script>
+  <script type="text/javascript" src="./javascripts/idForm.js"></script>
+</body>
+
+</html>
