@@ -32,4 +32,10 @@ const saveSongsInDB = async () => {
     process.exit()
 }
 
+
+
+
+// 
+// "https://api.spotify.com/v1/artists/08td7MxkoHQkXnWAYD8d6Q"
+
 exports.saveSongsInDB = saveSongsInDB

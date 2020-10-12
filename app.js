@@ -17,13 +17,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/songs', songsRouter)
 
 if (process.env.LOAD_SONGS !== undefined) {
-    const task = process.env.LOAD_SONGS
     // MongoDB connection
     console.log('Connecting with DB...');
     connection.once('open', async () => {
         console.log('DB is connected to Patagonian Challenge in MongoDB')
-    if(LOAD_SONGS === 'load') return saveSongsInDB()
-    if(LOAD_SONGS === 'json') return importSongsFromDB()
+    if(process.env.LOAD_SONGS === 'load') return saveSongsInDB()
+    if(process.env.LOAD_SONGS === 'json') return importSongsFromDB()
     })
 }
 
